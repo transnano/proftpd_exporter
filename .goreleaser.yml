@@ -9,8 +9,11 @@ builds:
     binary: proftpd-exporter
     ldflags:
       - -s -w
-      - -X main.Version={{.Version}}
-      - -X main.Revision={{.ShortCommit}}
+      - -X github.com/prometheus/common/version.Version={{.Version}}
+      - -X github.com/prometheus/common/version.BuildDate={{.Date}}
+      - -X github.com/prometheus/common/version.Branch=master
+      - -X github.com/prometheus/common/version.Revision={{.ShortCommit}}
+      - -X github.com/prometheus/common/version.BuildUser=transnano
     env:
       - CGO_ENABLED=0
 archives:
@@ -26,3 +29,17 @@ archives:
         format: zip
 release:
   prerelease: auto
+nfpms:
+  -
+    id: proftpd-exporter-nfpms
+    package_name: proftpd-exporter
+    homepage: https://github.com/transnano/proftpd_exporter
+    maintainer: Transnano <transnano.jp@gmail.com>
+    description: proftpd-exporter is prometheus exporter for ProFTPD metrics.
+    license: Apache 2.0
+    formats:
+      - deb
+      - rpm
+    bindir: /usr/bin
+    epoch: 1
+    release: 1

@@ -1,6 +1,7 @@
-# proftpd-exporter
+# proftpd-exporter ![Releases](https://github.com/transnano/proftpd_exporter/workflows/Releases/badge.svg) ![Publish Docker image](https://github.com/transnano/proftpd_exporter/workflows/Publish%20Docker%20image/badge.svg) ![Vulnerability Scan](https://github.com/transnano/proftpd_exporter/workflows/Vulnerability%20Scan/badge.svg)
 
-Check the deadline of server certificate on local.
+Prometheus exporter for ProFTPD metrics.  
+Supports ProFTPD 1.3.x
 
 ## How to use
 
