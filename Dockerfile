@@ -1,4 +1,4 @@
-FROM golang:1.14.6
+FROM golang:1.14.7
 WORKDIR /go/src/github.com/transnano/proftpd_exporter/
 COPY . .
 RUN CGO_ENABLED=0 GOOS=linux go build -o proftpd-exporter -ldflags "-s -w \
