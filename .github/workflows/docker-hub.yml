@@ -10,12 +10,6 @@ jobs:
     steps:
       - name: Check out the repo
         uses: actions/checkout@v2
-      - run: |
-          echo "Version: $(git describe --tags --abbrev=0)"
-          echo "BuildDate: $(date +%FT%T%z)"
-          echo "Branch: $(git branch -a | grep -E '^\*' | cut -b 3-)"
-          echo "Revision: $(git rev-parse --short HEAD)"
-          echo "BuildUser: $(whoami)"
       - name: Push to Docker Hub
         uses: docker/build-push-action@v1
         with:
