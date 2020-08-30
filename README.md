@@ -1,5 +1,14 @@
 # proftpd-exporter ![Releases](https://github.com/transnano/proftpd_exporter/workflows/Releases/badge.svg) ![Publish Docker image](https://github.com/transnano/proftpd_exporter/workflows/Publish%20Docker%20image/badge.svg) ![Vulnerability Scan](https://github.com/transnano/proftpd_exporter/workflows/Vulnerability%20Scan/badge.svg)
 
+![License](https://img.shields.io/github/license/transnano/proftpd_exporter?style=flat)
+
+![Container image version](https://img.shields.io/docker/v/transnano/proftpd-exporter/latest?style=flat)
+![Container image size](https://img.shields.io/docker/image-size/transnano/proftpd-exporter/latest?style=flat)
+![Container image pulls](https://img.shields.io/docker/pulls/transnano/proftpd-exporter?style=flat)
+
+![GitHub go.mod Go version](https://img.shields.io/github/go-mod/go-version/transnano/proftpd_exporter)
+[![Go Report Card](https://goreportcard.com/badge/github.com/transnano/proftpd_exporter)](https://goreportcard.com/report/github.com/transnano/proftpd_exporter)
+
 Prometheus exporter for ProFTPD metrics.  
 Supports ProFTPD 1.3.x
 
