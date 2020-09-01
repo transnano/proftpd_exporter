@@ -1,4 +1,4 @@
-FROM golang:1.15.0-buster as build
+FROM golang:1.15.1-buster as build
 
 WORKDIR /go/src/github.com/transnano/proftpd_exporter/
 # For building Go Module required
