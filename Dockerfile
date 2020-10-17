@@ -22,7 +22,7 @@ RUN go build -o proftpd-exporter -ldflags "-s -w \
 -X github.com/prometheus/common/version.Revision=$(git rev-parse --short HEAD) \
 -X github.com/prometheus/common/version.BuildUser=transnano"
 
-# Now copy it into our base image.
+# hadolint ignore=DL3006
 FROM gcr.io/distroless/base-debian10
 LABEL maintainer="Transnano <transnano.jp@gmail.com>"
 COPY --from=build /go/src/github.com/transnano/proftpd_exporter/proftpd-exporter /proftpd-exporter

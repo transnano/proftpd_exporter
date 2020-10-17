@@ -1,4 +1,4 @@
-# proftpd-exporter ![Releases](https://github.com/transnano/proftpd_exporter/workflows/Releases/badge.svg) ![Publish Docker image](https://github.com/transnano/proftpd_exporter/workflows/Publish%20Docker%20image/badge.svg) ![Vulnerability Scan](https://github.com/transnano/proftpd_exporter/workflows/Vulnerability%20Scan/badge.svg)
+# proftpd-exporter ![Releases](https://github.com/transnano/proftpd_exporter/workflows/Releases/badge.svg) ![Publish Docker image](https://github.com/transnano/proftpd_exporter/workflows/Publish%20Docker%20image/badge.svg) ![Vulnerability Scan](https://github.com/transnano/proftpd_exporter/workflows/Vulnerability%20Scan/badge.svg) ![Haskell Dockerfile Linter](https://github.com/transnano/proftpd_exporter/workflows/Haskell%20Dockerfile%20Linter/badge.svg)
 
 ![License](https://img.shields.io/github/license/transnano/proftpd_exporter?style=flat)
 
