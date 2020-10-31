@@ -12,13 +12,13 @@ builds:
       - -s -w
       - -X github.com/prometheus/common/version.Version={{.Version}}
       - -X github.com/prometheus/common/version.BuildDate={{.Date}}
-      - -X github.com/prometheus/common/version.Branch=master
+      - -X github.com/prometheus/common/version.Branch=main
       - -X github.com/prometheus/common/version.Revision={{.ShortCommit}}
       - -X github.com/prometheus/common/version.BuildUser=transnano
     env:
       - CGO_ENABLED=0
 archives:
-  - name_template: '{{ .ProjectName }}_{{ .Os }}_{{ .Arch }}{{ if .Arm }}v{{ .Arm }}{{ end }}'
+  - name_template: "{{ .ProjectName }}_{{ .Os }}_{{ .Arch }}{{ if .Arm }}v{{ .Arm }}{{ end }}"
     replacements:
       darwin: darwin
       linux: linux
@@ -31,8 +31,7 @@ archives:
 release:
   prerelease: auto
 nfpms:
-  -
-    id: proftpd-exporter-nfpms
+  - id: proftpd-exporter-nfpms
     package_name: proftpd-exporter
     homepage: https://github.com/transnano/proftpd_exporter
     maintainer: Transnano <transnano.jp@gmail.com>
